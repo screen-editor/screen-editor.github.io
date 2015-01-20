@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>se - Download</title>
+  <meta name="generator" content="asciidoc 8.6.5" />
+  <meta http-equiv="Content-Language" content="English" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<table id="container">
+  <tr>
+    <td align="center" colspan="2">
+      <h1>Download</h1>
+    </td>
+  </tr>
+  <tr>
+    <td id="menu" valign="top">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="screenshots.html">Screenshots</a></li>
+      </ul>
+    </td>
+    <td id="body" valign="top">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>The source code for <em>se</em> is in the public domain and available for download
+below. It compiles and runs on many
+<a href="http://se-editor.org/platforms.html">platforms</a>. To compile it you will need a
+<a href="http://gcc.gnu.org/">C compiler</a>, <a href="http://www.gnu.org/software/bash/">shell</a>,
+<a href="http://www.gnu.org/software/make/">make</a>, and
+<a href="http://www.gnu.org/software/ncurses/">terminal library</a>. The hyperlinked software
+packages are by no means your only options. <em>se</em> also builds with
+<a href="http://clang.llvm.org/">clang</a>, BSD variants of
+make, most shells, and other <a href="http://www.gnu.org/software/termutils/">terminal</a>
+<a href="http://en.wikipedia.org/wiki/Curses_%28programming_library%29">libraries</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_current_release">Current Release</h2>
+<div class="sectionbody">
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<thead>
+<tr>
+<th align="left" valign="top"> Version </th>
+<th align="left" valign="top"> Release Date </th>
+<th align="left" valign="top"> Download File </th>
+<th align="left" valign="top"> md5sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">3.0.1</p></td>
+<td align="left" valign="top"><p class="table">March 24, 2013</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-3.0.1.tar.gz">se-3.0.1.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">1591fbb514729f846a4f12bdc45ee600</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_instructions">Installation Instructions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><em>se</em> uses autotools to provide a standard <tt>configure</tt> script. After
+extracting the files from the
+<a href="http://www.gzip.org/">gzip</a>'d
+<a href="http://www.gnu.org/software/tar/">tar</a> file, just configure the
+build environment, build <em>se</em>, and install the resulting binaries, man pages,
+and help files using these commands:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt> # wget http://se-editor.org/dist/se-3.0.1.tar.gz
+ # tar zvxf se-3.0.1.tar.gz
+ # cd se-3.0.1/
+ # ./configure
+ # make
+ # make install</tt></pre>
+</div></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_git_repository">git Repository</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This project uses the <a href="http://git-scm.com/">git</a> source code management
+system to maintain a history of the code changes. There is a public
+repository on <a href="https://github.com/">github</a>.
+The URL is as follows: <strong>git://github.com/tcort/se.git</strong> The pretty web
+interface is at the following URL: <a href="https://github.com/tcort/se">https://github.com/tcort/se</a> To clone
+the latest development sources and build <em>se</em>, run the following
+commands:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt># git clone git://github.com/tcort/se.git
+# cd se
+# autoreconf -i
+# ./configure
+# make
+# make install</tt></pre>
+</div></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_historical_releases">Historical Releases</h2>
+<div class="sectionbody">
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<thead>
+<tr>
+<th align="left" valign="top"> Version </th>
+<th align="left" valign="top"> Release Date </th>
+<th align="left" valign="top"> Download File </th>
+<th align="left" valign="top"> md5sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">3.0</p></td>
+<td align="left" valign="top"><p class="table">March 6, 2013</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-3.0.tar.gz">se-3.0.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">b080a5377b95d989e14ad01b0d25e33a</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.2</p></td>
+<td align="left" valign="top"><p class="table">September 22, 1987</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-2.2.tar.gz">se-2.2.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">1bef0738c9e5a2a61869d2ea0d7b1c55</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.1</p></td>
+<td align="left" valign="top"><p class="table">February 3, 1987</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-2.1.tar.gz">se-2.1.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">dc36c60d128a1713a96014e0ab526148</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">2.0</p></td>
+<td align="left" valign="top"><p class="table">January 26, 1987</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-2.0.tar.gz">se-2.0.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">c98b883874dea4f04c29675add58547a</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">1.0</p></td>
+<td align="left" valign="top"><p class="table">December 1, 1986</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://se-editor.org/dist/se-1.0.tar.gz">se-1.0.tar.gz</a></p></td>
+<td align="left" valign="top"><p class="table">eae650294310e8c0a4e65edd88293c40</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

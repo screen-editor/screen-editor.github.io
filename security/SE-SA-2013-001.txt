@@ -1,0 +1,40 @@
+se Security Advisory 2013-001
+
+Topic: improper handling of .serc files.
+
+Issued:		24 Mar 2013
+Last Updated:	24 Mar 2013
+Affected:	se before version 3.0.1
+
+The ownership and permissions of .serc files are not checked before
+executing the commands within the .serc file, even the .serc file in
+the current working directory.
+
+SUMMARY
+=======
+
+If a user could be tricked into running se in a directory where an 
+attacker has placed a malicious .serc file, se will evaluate the 
+commands contained within it including shell commands. This is because 
+se unconditionally executes the .serc file in the current working 
+directory even if it is owned or writable by another user.
+
+IMPACT
+======
+
+A user could be duped into running arbitrary shell commands.
+
+AFFECTED SOFTWARE
+=================
+
+All releases of se prior to 3.0.1
+
+FIXES
+=====
+
+The se project suggests all users upgrade to se version 3.0.1 or later.
+
+ACKNOWLEDGEMENTS
+================
+
+This issue was identified by Matthias Kilian of the OpenBSD project.

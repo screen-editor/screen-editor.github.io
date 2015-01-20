@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>se - Welcome to the Screen Editor Homepage</title>
+  <meta name="generator" content="asciidoc 8.6.5" />
+  <meta http-equiv="Content-Language" content="English" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<table id="container">
+  <tr>
+    <td align="center" colspan="2">
+      <h1>Welcome to the Screen Editor Homepage</h1>
+    </td>
+  </tr>
+  <tr>
+    <td id="menu" valign="top">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="screenshots.html">Screenshots</a></li>
+      </ul>
+    </td>
+    <td id="body" valign="top">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>Welcome to the home page for Screen Editor, <em>se</em> for short.
+<em>se</em> is a screen oriented version of the classic UNIX
+text editor <em>ed</em>. It&#8217;s similar to <em>vi</em> as both are modal editors with
+curses interfaces. However, it differs from <em>vi</em> in that it has the same
+command syntax as <em>ed</em>. For example, in <em>se</em> to escape from append mode,
+you&#8217;d enter a line containing a single period instead of the <em>vi</em> way of
+hitting the escape key.</p></div>
+<div class="paragraph"><p><em>se</em> has a long <a href="http://se-editor.org/history.html">history</a>
+dating back to the early 1980s. Beginning in 2013, Thomas Cort undertook
+the task of modernizing the early code and build system to
+get the software working on recent POSIX operating systems.
+The code base was straight forward and only used facilities available 25 years
+prior, and as a result, with a few modifications, it runs on
+many modern operating systems. Thomas' primary motivation is to
+preserve this bit of computing history. His goals are to squash any remaining
+bugs and make <em>se</em> as portable as possible. No major new features will be
+added. Inquiries, bug reports, patches, and other correspondance should
+be directed to Thomas via e-mail at <a href="mailto:tcort@se-editor.org">tcort@se-editor.org</a></p></div>
+<div class="ulist"><div class="title">Features</div><ul>
+<li>
+<p>
+command syntax that is very familiar to users who already know <em>ed</em>.
+</p>
+</li>
+<li>
+<p>
+full visual interface allowing you to see the text you&#8217;re editing.
+</p>
+</li>
+<li>
+<p>
+built-in help system which describes many of the available commands.
+</p>
+</li>
+<li>
+<p>
+many configurable options which can be loaded from a <tt>.serc</tt> file.
+</p>
+</li>
+<li>
+<p>
+can be run interactively or in a script via the included <em>scriptse</em> utility.
+</p>
+</li>
+<li>
+<p>
+portable across many <a href="http://se-editor.org/platforms.html">platforms</a>.
+</p>
+</li>
+<li>
+<p>
+will notify you if you have new/unread e-mail.
+</p>
+</li>
+<li>
+<p>
+optional usage logging.
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_news">News</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_2013_11_26_package_for_openbsd_available_and_other_updates">2013-11-26 - Package for OpenBSD available and other updates</h3>
+<div class="paragraph"><p>Thanks to James Turner, there is now a package for <em>se</em> in
+<a href="http://openports.se/editors/se">OpenBSD Ports</a>.</p></div>
+<div class="paragraph"><p>Work on <em>se</em> is continuing. I&#8217;ve recently been using
+<a href="http://clang-analyzer.llvm.org/scan-build.html">scan-build</a>
+to identify potential bugs and fixing the code that caused
+the warnings. Over the next few months I&#8217;ll be working on
+documentation and bug fixes. If all goes well, another
+release will be made in about 6 months. Feel free to suggest
+improvements and contribute patches.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_2013_03_24_version_3_0_1_released_security_fix">2013-03-24 - Version 3.0.1 Released [Security Fix]</h3>
+<div class="paragraph"><p>This is a security release. It is
+recommended that all users upgrade. The release fixes
+insecure handling of <tt>.serc</tt> files. The new behaviour is
+to ignore <tt>.serc</tt> files that aren&#8217;t owned by the euid of
+the se process and <tt>.serc</tt> files that are writable by
+other users. No other changes are included in this
+release. Thank you to Matthias Kilian of the OpenBSD
+project for alerting me to this issue. A write-up about the issue
+is available in security advisory
+<a href="http://se-editor.org/security/SE-SA-2013-001.txt">SE-SA-2013-001</a>.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_2013_03_24_public_git_repository">2013-03-24 - public git repository</h3>
+<div class="paragraph"><p>Just a short note to mention that I&#8217;ve set up a <a href="http://git-scm.com/">git</a>
+repository on <a href="https://github.com/">github</a> for <em>se</em> development. The
+URL is as follows: <strong>git://github.com/tcort/se.git</strong> The pretty web
+interface is at the following URL: <a href="https://github.com/tcort/se">https://github.com/tcort/se</a></p></div>
+</div>
+<div class="sect2">
+<h3 id="_2013_03_06_version_3_0_released">2013-03-06 - Version 3.0 Released</h3>
+<div class="paragraph"><p>It is with great pleasure that I announce the release of <em>se</em> version 3.0.
+Many thanks are owed to the original authors of this historic text editor.
+There are no functional changes to <em>se</em> in this release, just autotooling
+and code modernization. Download <a href="http://se-editor.org/dist/se-3.0.tar.gz">se-3.0.tar.gz</a>.</p></div>
+</div>
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
